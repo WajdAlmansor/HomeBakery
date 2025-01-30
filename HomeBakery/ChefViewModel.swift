@@ -1,3 +1,11 @@
+//
+//  ChefViewModel.swift
+//  HomeBakery
+//
+//  Created by Wajd on 29/01/2025.
+//
+
+
 import Foundation
 import SwiftUI
 
@@ -6,13 +14,13 @@ class ChefViewModel: ObservableObject {
 
     func loadChefName(chefId: String) async {
         // Construct the URL with the correct filterByFormula syntax
-        guard let url = URL(string: "https://api.airtable.com/v0/appXMZSaDdTpCIm/chef?filterByFormula={id}='\(chefId)'") else {
+        guard let url = URL(string: "https://api.airtable.com/v0/appXMW3ZsAddTpClm/chef") else {
             print("Invalid URL")
             return
         }
 
         var request = URLRequest(url: url)
-        request.setValue("Bearer pat7EB8Wy3dgz1Y61.2b7d03863aca9f1626dcb72f7728bd157e695799b43c7392d5faf4f52fcb001", forHTTPHeaderField: "Authorization")
+        request.setValue("Bearer pat7E88yW3dgzlY61.2b7d03863aca9f1262dcb772f7728bd157e695799b43c7392d5faf4f52fcb001", forHTTPHeaderField: "Authorization")
 
         do {
             // Fetch data from the API

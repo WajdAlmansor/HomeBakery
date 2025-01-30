@@ -8,6 +8,9 @@
 import SwiftUI   
 
 struct Home: View {
+    @State private var courses: [Course] = []
+    @State private var isLoading = true
+
     @State var searchString = ""
     var body: some View {
             VStack {
@@ -59,7 +62,36 @@ struct Home: View {
                 
             }
     }
+    var filteredCourses: [Course] {
+        if searchString.isEmpty {
+            return courses
+        } else {
+            return courses.filter { $0.title.lowercased().contains(searchString.lowercased()) }
+        }
+    }
+
+    func loadItems() async {
+        guard let url = URL(string: "https://api.airtable.com/v0/appXMW3ZsAddTpClm/course") else {
+            return
+        }
+
+        var request = URLRequest(url: url)
+        request.setValue("Bearer pat7E88yW3dgzlY61.2b7d03863aca9f1262dcb772f7728bd157e695799b43c7392d5faf4f52fcb001", forHTTPHeaderField: "Authorization")
+
+        do {
+            let (data, _) = try await URLSession.shared.data(for: request)
+            print(String(data: data, encoding: .utf8) ?? "Invalid Course JSON") // Debug: Print raw course data
+            let apiResponse = try JSONDecoder().decode(APIResponse.self, from: data)
+            courses = apiResponse.records.map { $0.fields }
+            isLoading = false
+        } catch {
+            print("Error: \(error)")
+            isLoading = false
+        }
+    }
+
 }
+
     #Preview {
         Home()
     }
