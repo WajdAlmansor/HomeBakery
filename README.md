@@ -1,7 +1,6 @@
-![a045c7badbdf24e4849405388e937f4abee9abca](https://github.com/user-attachments/assets/d7e22dca-0863-4cc3-8702-3b876134deec)
-
 
 # 🍰 HomeBakery App
+![a045c7badbdf24e4849405388e937f4abee9abca](https://github.com/user-attachments/assets/d7e22dca-0863-4cc3-8702-3b876134deec)
 
 Welcome to HomeBakery! 🏡🍪 A delightful app designed for baking enthusiasts to explore and book baking courses from experienced chefs. Whether you're a beginner or an expert, HomeBakery helps you elevate your baking skills with ease.
 
