@@ -1,12 +1,12 @@
 ![a045c7badbdf24e4849405388e937f4abee9abca](https://github.com/user-attachments/assets/d7e22dca-0863-4cc3-8702-3b876134deec)
 
 
-#🍰 HomeBakery App
+# 🍰 HomeBakery App
 
 Welcome to HomeBakery! 🏡🍪 A delightful app designed for baking enthusiasts to explore and book baking courses from experienced chefs. Whether you're a beginner or an expert, HomeBakery helps you elevate your baking skills with ease.
 
 
-##📌 Features
+## 📌 Features
 
 🔍 Search for Courses - Easily find baking courses that suit your level and interest.
 
@@ -21,7 +21,7 @@ Welcome to HomeBakery! 🏡🍪 A delightful app designed for baking enthusiasts
 🔑 Secure Sign-In - Log in with your credentials to access personalized features.
 
 
-##🏗️ Tech Stack
+## 🏗️ Tech Stack
 
 SwiftUI - Modern and interactive UI design.
 
@@ -33,7 +33,7 @@ Async/Await - Ensures smooth network requests and data handling.
 
 
 
-##🚀 Installation Guide
+## 🚀 Installation Guide
 
 Clone the Repository 📂
 
@@ -51,7 +51,7 @@ Click Run (⌘ + R) to launch HomeBakery.
 
 
 
-##👨‍🍳 How It Works
+## 👨‍🍳 How It Works
 
 Search for Courses 🔎 - Browse upcoming and popular courses.
 
