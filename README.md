@@ -37,8 +37,6 @@ Async/Await - Ensures smooth network requests and data handling.
 
 Clone the Repository 📂
 
-git clone https://github.com/yourusername/HomeBakery.git
-
 Open in Xcode 🖥️
 
 Open HomeBakery.xcodeproj in Xcode.
